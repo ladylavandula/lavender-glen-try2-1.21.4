@@ -1,5 +1,6 @@
 package com.lavandula.lavglen;
 
+import com.lavandula.lavglen.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +12,6 @@ public class LavenderGlen implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModBlocks.registerModBLocks();
 	}
 }
