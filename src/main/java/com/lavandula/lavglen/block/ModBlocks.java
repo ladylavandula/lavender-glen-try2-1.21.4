@@ -14,11 +14,12 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
-;
 
 public class ModBlocks {
-    public static final Block   LAVENDER_FLOWER_BLOCK = registerBlock("lavender_flower_block",
-            new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "lavender_flower_block"))).sounds(BlockSoundGroup.GRASS).breakInstantly().noCollision().nonOpaque()));
+    public static final Block LAVENDER_FLOWER_BLOCK = registerBlock("lavender_flower_block",
+            new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(LavenderGlen.MOD_ID, "lavender_flower_block"))).sounds(BlockSoundGroup.GRASS)
+                    .breakInstantly().noCollision().nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block) {
