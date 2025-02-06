@@ -37,7 +37,7 @@ public class ModBlocks {
 
     }
 
-    public static void registerModBLocks() {
+    public static void registerModBlocks() {
         LavenderGlen.LOGGER.info("Registering Mod Blocks for " + LavenderGlen.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {

@@ -12,6 +12,6 @@ public class LavenderGlen implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModBlocks.registerModBLocks();
+		ModBlocks.registerModBlocks();
 	}
 }
