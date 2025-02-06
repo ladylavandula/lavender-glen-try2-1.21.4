@@ -16,6 +16,10 @@ import net.minecraft.util.Identifier;
 
 
 public class ModBlocks {
+    public static final Block MYSTWOOD_PLANKS = registerBlock("mystwood_planks",
+            new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(LavenderGlen.MOD_ID, "mystwood_planks"))).sounds(BlockSoundGroup.WOOD).strength(2)));
+
     public static final Block LAVENDER_FLOWER_BLOCK = registerBlock("lavender_flower_block",
             new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
                     Identifier.of(LavenderGlen.MOD_ID, "lavender_flower_block"))).sounds(BlockSoundGroup.GRASS)
@@ -29,12 +33,16 @@ public class ModBlocks {
 
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(LavenderGlen.MOD_ID, name),
-                new BlockItem(block, new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(LavenderGlen.MOD_ID)))));
+                new BlockItem(block, new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(LavenderGlen.MOD_ID, name)))));
 
     }
 
     public static void registerModBLocks() {
         LavenderGlen.LOGGER.info("Registering Mod Blocks for " + LavenderGlen.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModBlocks.MYSTWOOD_PLANKS);
+        });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.LAVENDER_FLOWER_BLOCK);
