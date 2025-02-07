@@ -16,7 +16,7 @@ import net.minecraft.util.Identifier;
 
 
 public class ModBlocks {
-    public static final Block MYSTWOOD_PLANKS = registerBlock("mystwood_planks",
+    public static final Block MYSTWOOD_PLANKS = registerBlock("mystwood_plank",
             new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
                     Identifier.of(LavenderGlen.MOD_ID, "mystwood_planks"))).sounds(BlockSoundGroup.WOOD).strength(2)));
 
