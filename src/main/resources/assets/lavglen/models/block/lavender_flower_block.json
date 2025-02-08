@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "lavglen:block/lavender_flower_block"
-  }
-}
