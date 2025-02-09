@@ -21,6 +21,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MYSTWOOD_WOOD);
         addDrop(ModBlocks.STRIPPED_MYSTWOOD_LOG);
         addDrop(ModBlocks.STRIPPED_MYSTWOOD_WOOD);
+        addDrop(ModBlocks.MYSTWOOD_SAPLING);
         addDrop(ModBlocks.MYSTWOOD_LEAVES); // need to add the sapling, sticks, etc, later.
 
     }

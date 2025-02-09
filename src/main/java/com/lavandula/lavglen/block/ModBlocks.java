@@ -1,6 +1,7 @@
 package com.lavandula.lavglen.block;
 
 import com.lavandula.lavglen.LavenderGlen;
+import com.lavandula.lavglen.world.tree.ModSaplingGenerators;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -38,9 +39,9 @@ public class ModBlocks {
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_leaves")))));
 
 ////ERROR TO BE COMPLETED LATER Sapling registration
-//    public static final Block MYSTWOOD_SAPLING = registerBlock("mystwood_sapling",
-//            new SaplingBlock(ModSaplingGenerators.MYSTWOOD, AbstractBlock.Settings.copy(Blocks.OAK_LOG)
-//                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_sapling")))));
+    public static final Block MYSTWOOD_SAPLING = registerBlock("mystwood_sapling",
+            new SaplingBlock(ModSaplingGenerators.MYSTWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_sapling")))));
 
 
 //flower registration
@@ -76,6 +77,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.LAVENDER_FLOWER_BLOCK);
             fabricItemGroupEntries.add(ModBlocks.MYSTWOOD_LEAVES);
+            fabricItemGroupEntries.add(ModBlocks.MYSTWOOD_SAPLING);
 
         });
     }

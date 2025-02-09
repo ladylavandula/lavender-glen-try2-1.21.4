@@ -1,0 +1,9 @@
+// 1.21.4	-999999999-01-01T00:00:00	Lavender Glen/Block Loot Tables
+440d11404f6c0511d6be0b9325871853400220f0 data/lavglen/loot_table/blocks/lavender_flower_block.json
+7d69ac8c689a04094e949859ad93915c873784b2 data/lavglen/loot_table/blocks/mystwood_leaves.json
+4758c99c0173247b433bfaf58f0802a211c64cac data/lavglen/loot_table/blocks/mystwood_log.json
+d5747e0d5da4a36875c0789ef193f6cefbc88e11 data/lavglen/loot_table/blocks/mystwood_planks.json
+7f20117b1ca47ad7aa4de13f3050523c7286b18a data/lavglen/loot_table/blocks/mystwood_sapling.json
+add2dcfe4b4df7c5e16aedacb20d02a44adb712a data/lavglen/loot_table/blocks/mystwood_wood.json
+76ea524662bafcf646ce997e10c4f7e0b5ce9f47 data/lavglen/loot_table/blocks/stripped_mystwood_log.json
+83a48ebf0c760fa55e3cfca60c4f35a9266f0954 data/lavglen/loot_table/blocks/stripped_mystwood_wood.json

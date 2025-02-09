@@ -30,6 +30,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.LEAVES)
                 .add(ModBlocks.MYSTWOOD_LEAVES.asItem());
 
+        getOrCreateTagBuilder(ItemTags.SAPLINGS)
+                .add(ModBlocks.MYSTWOOD_SAPLING.asItem());
+
 
     }
 }
