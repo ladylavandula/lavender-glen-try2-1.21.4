@@ -15,11 +15,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        getOrCreateTagBuilder(BlockTags.PLANKS)
+                .add(ModBlocks.MYSTWOOD_PLANKS);
+
+        getOrCreateTagBuilder(BlockTags.SMALL_FLOWERS)
+                .add(ModBlocks.LAVENDER_FLOWER_BLOCK);
+
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.MYSTWOOD_LOG)
                 .add(ModBlocks.MYSTWOOD_WOOD)
                 .add(ModBlocks.STRIPPED_MYSTWOOD_LOG)
                 .add(ModBlocks.STRIPPED_MYSTWOOD_WOOD);
 
+        getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(ModBlocks.MYSTWOOD_LEAVES);
     }
 }

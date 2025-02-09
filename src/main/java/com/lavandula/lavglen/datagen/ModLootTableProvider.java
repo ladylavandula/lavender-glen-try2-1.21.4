@@ -14,14 +14,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+
+        addDrop(ModBlocks.MYSTWOOD_PLANKS);
+        addDrop(ModBlocks.LAVENDER_FLOWER_BLOCK);
         addDrop(ModBlocks.MYSTWOOD_LOG);
         addDrop(ModBlocks.MYSTWOOD_WOOD);
         addDrop(ModBlocks.STRIPPED_MYSTWOOD_LOG);
         addDrop(ModBlocks.STRIPPED_MYSTWOOD_WOOD);
-        addDrop(ModBlocks.MYSTWOOD_PLANKS);
-        addDrop(ModBlocks.MYSTWOOD_SAPLING);
-
-        addDrop(ModBlocks.MYSTWOOD_LEAVES, leavesDrops(ModBlocks.MYSTWOOD_LEAVES, ModBlocks.MYSTWOOD_SAPLING, 0.0625f));
+        addDrop(ModBlocks.MYSTWOOD_LEAVES); // need to add the sapling, sticks, etc, later.
 
     }
 }

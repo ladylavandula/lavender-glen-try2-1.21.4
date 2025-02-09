@@ -1,12 +1,12 @@
 package com.lavandula.lavglen;
 
-import com.lavandula.lavglen.datagen.*;
-import com.lavandula.lavglen.world.ModConfiguredFeatures;
-import com.lavandula.lavglen.world.ModPlacedFeatures;
+import com.lavandula.lavglen.datagen.ModBlockTagProvider;
+import com.lavandula.lavglen.datagen.ModItemTagProvider;
+import com.lavandula.lavglen.datagen.ModLootTableProvider;
+import com.lavandula.lavglen.datagen.ModModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
-import net.minecraft.registry.RegistryKeys;
 
 public class LavenderGlenDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -17,14 +17,14 @@ public class LavenderGlenDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
-		pack.addProvider(ModRegistryDataGenerator::new);
+
+
 
 
 	}
 
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
-		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
-		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+
 	}
 }
