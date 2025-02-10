@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "lavglen:block/mystwood_slab"
+    },
+    "type=double": {
+      "model": "lavglen:block/mystwood_planks"
+    },
+    "type=top": {
+      "model": "lavglen:block/mystwood_slab_top"
+    }
+  }
+}

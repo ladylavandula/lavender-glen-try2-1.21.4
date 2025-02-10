@@ -7,6 +7,7 @@ import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
 import net.minecraft.client.data.Models;
 import net.minecraft.client.data.TexturedModel;
+import net.minecraft.data.family.BlockFamily;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -16,7 +17,18 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTWOOD_PLANKS);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MYSTWOOD_PLANKS)
+                .slab(ModBlocks.MYSTWOOD_SLAB);
+                        //.stairs(ModBlocks.MYSTWOOD_STAIRS);
+
+
+        new BlockFamily.Builder(ModBlocks.MYSTWOOD_PLANKS)
+                .slab(ModBlocks.MYSTWOOD_SLAB);
+                //.stairs(ModBlocks.MYSTWOOD_STAIRS);
+
+
+
+
         blockStateModelGenerator.registerLog(ModBlocks.MYSTWOOD_LOG).log(ModBlocks.MYSTWOOD_LOG).wood(ModBlocks.MYSTWOOD_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MYSTWOOD_LOG).log(ModBlocks.STRIPPED_MYSTWOOD_LOG).wood(ModBlocks.STRIPPED_MYSTWOOD_WOOD);
 

@@ -2,6 +2,8 @@ package com.lavandula.lavglen.block;
 
 import com.lavandula.lavglen.LavenderGlen;
 import com.lavandula.lavglen.world.tree.ModSaplingGenerators;
+import net.fabricmc.fabric.api.block.v1.FabricBlock;
+import net.fabricmc.fabric.api.block.v1.FabricBlockState;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -16,7 +18,11 @@ import net.minecraft.util.Identifier;
 
 
 public class ModBlocks {
-// Tree stuff registration
+
+
+
+
+    // Tree stuff registration
     public static final Block MYSTWOOD_LOG = registerBlock("mystwood_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_log")))));
@@ -29,6 +35,21 @@ public class ModBlocks {
     public static final Block STRIPPED_MYSTWOOD_WOOD = registerBlock("stripped_mystwood_wood",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "stripped_mystwood_wood")))));
+
+    // Wood set - tree stuff
+
+    public static final Block MYSTWOOD_SLAB = registerBlock("mystwood_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_slab")))));
+
+
+
+
+//    public static final Block MYSTWOOD_STAIRS = registerBlock("mystwood_stairs",
+//            new StairsBlock(ModBlocks.MYSTWOOD_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)
+//                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_stairs")))));
+
+
 
 
     public static final Block MYSTWOOD_PLANKS = registerBlock("mystwood_planks",

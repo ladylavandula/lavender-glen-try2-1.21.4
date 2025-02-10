@@ -3,6 +3,7 @@ package com.lavandula.lavglen.datagen;
 import com.lavandula.lavglen.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.data.family.BlockFamily;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.item.Item;
@@ -24,6 +25,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             public void generate() {
                 RegistryWrapper.Impl<Item> itemLookup = registries.getOrThrow(RegistryKeys.ITEM);
 
+                new BlockFamily.Builder(ModBlocks.MYSTWOOD_PLANKS)
+                        .slab(ModBlocks.MYSTWOOD_SLAB);
+
+
+
                 offerShapelessRecipe(
                         ModBlocks.MYSTWOOD_PLANKS,
                         ModBlocks.MYSTWOOD_LOG,
@@ -34,6 +40,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         ModBlocks.MYSTWOOD_WOOD,
                         "planks",
                         4);
+
+
+                offerSlabRecipe(
+                        RecipeCategory.BUILDING_BLOCKS,
+                        ModBlocks.MYSTWOOD_SLAB,
+                        ModBlocks.MYSTWOOD_PLANKS
+                );
             }
         };
     }

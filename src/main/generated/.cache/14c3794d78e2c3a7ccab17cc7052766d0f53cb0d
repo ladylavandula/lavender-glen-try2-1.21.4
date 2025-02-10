@@ -1,5 +1,7 @@
 // 1.21.4	-999999999-01-01T00:00:00	Lavender Glen/ModRecipeProvider
+090a780f1c9d425378a57ebe1a0ab76e613ac756 data/lavglen/advancement/recipes/building_blocks/mystwood_slab.json
 3114eaf7032e7ec34d72c9d71e5336565ab70abb data/lavglen/advancement/recipes/misc/mystwood_planks_from_mystwood_log.json
 6620a601e94c23e800891c3ccde1c48ab3f37afb data/lavglen/advancement/recipes/misc/mystwood_planks_from_mystwood_wood.json
 7a019f2b12404131693c0e04338d9338aa001349 data/lavglen/recipe/mystwood_planks_from_mystwood_log.json
 0251feb61970bc2a119d01de91d4b49163efd8dd data/lavglen/recipe/mystwood_planks_from_mystwood_wood.json
+243c881f8db5c290460e3e88ecee1ac35c6fa0dd data/lavglen/recipe/mystwood_slab.json
