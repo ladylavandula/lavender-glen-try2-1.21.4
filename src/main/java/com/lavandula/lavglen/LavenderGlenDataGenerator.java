@@ -1,9 +1,6 @@
 package com.lavandula.lavglen;
 
-import com.lavandula.lavglen.datagen.ModBlockTagProvider;
-import com.lavandula.lavglen.datagen.ModItemTagProvider;
-import com.lavandula.lavglen.datagen.ModLootTableProvider;
-import com.lavandula.lavglen.datagen.ModModelProvider;
+import com.lavandula.lavglen.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
@@ -17,6 +14,7 @@ public class LavenderGlenDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModRecipeProvider::new);
 
 
 

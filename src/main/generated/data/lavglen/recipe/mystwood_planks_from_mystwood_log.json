@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "planks",
+  "ingredients": [
+    "lavglen:mystwood_log"
+  ],
+  "result": {
+    "count": 4,
+    "id": "lavglen:mystwood_planks"
+  }
+}
