@@ -32,6 +32,7 @@ public class ModConfiguredFeatures {
                 new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), 3),
 
                 new TwoLayersFeatureSize(1, 0, 2)).build());
+
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

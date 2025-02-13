@@ -38,6 +38,18 @@ public class ModBlocks {
 
     // Wood set - tree stuff
 
+
+
+    public static final Block MYSTWOOD_PLANKS = registerBlock("mystwood_planks",
+           new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_planks")))));
+
+
+    public static final Block MYSTWOOD_STAIRS = registerBlock("mystwood_stairs",
+            new StairsBlock(ModBlocks.MYSTWOOD_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_stairs")))));
+
+
     public static final Block MYSTWOOD_SLAB = registerBlock("mystwood_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_slab")))));
@@ -45,16 +57,6 @@ public class ModBlocks {
 
 
 
-//    public static final Block MYSTWOOD_STAIRS = registerBlock("mystwood_stairs",
-//            new StairsBlock(ModBlocks.MYSTWOOD_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)
-//                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_stairs")))));
-
-
-
-
-    public static final Block MYSTWOOD_PLANKS = registerBlock("mystwood_planks",
-           new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_planks")))));
     public static final Block MYSTWOOD_LEAVES = registerBlock("mystwood_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_leaves")))));
@@ -92,6 +94,8 @@ public class ModBlocks {
             fabricItemGroupEntries.add(ModBlocks.MYSTWOOD_WOOD);
             fabricItemGroupEntries.add(ModBlocks.STRIPPED_MYSTWOOD_LOG);
             fabricItemGroupEntries.add(ModBlocks.STRIPPED_MYSTWOOD_WOOD);
+            fabricItemGroupEntries.add(ModBlocks.MYSTWOOD_SLAB);
+            fabricItemGroupEntries.add(ModBlocks.MYSTWOOD_STAIRS);
 
         });
 

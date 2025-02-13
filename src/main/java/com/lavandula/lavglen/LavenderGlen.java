@@ -1,6 +1,8 @@
 package com.lavandula.lavglen;
 
 import com.lavandula.lavglen.block.ModBlocks;
+import com.lavandula.lavglen.world.ModConfiguredFeatures;
+import com.lavandula.lavglen.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
@@ -17,6 +19,8 @@ public class LavenderGlen implements ModInitializer {
 	public void onInitialize() {
 
 		ModBlocks.registerModBlocks();
+
+		ModWorldGeneration.generateModWorldGen();
 
 		//Making things compostable at percent chance (0.3f =30%)
 		CompostingChanceRegistry.INSTANCE.add(ModBlocks.MYSTWOOD_LEAVES.asItem(), 0.3f);

@@ -31,8 +31,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
                 .add(ModBlocks.MYSTWOOD_SLAB);
 
-//        getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
-//                .add(ModBlocks.MYSTWOOD_STAIRS);
+        getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
+                .add(ModBlocks.MYSTWOOD_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
                 .add(ModBlocks.MYSTWOOD_LEAVES);

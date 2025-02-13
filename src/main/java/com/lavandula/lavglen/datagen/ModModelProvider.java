@@ -18,13 +18,13 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MYSTWOOD_PLANKS)
-                .slab(ModBlocks.MYSTWOOD_SLAB);
-                        //.stairs(ModBlocks.MYSTWOOD_STAIRS);
+                .slab(ModBlocks.MYSTWOOD_SLAB)
+                .stairs(ModBlocks.MYSTWOOD_STAIRS);
 
 
         new BlockFamily.Builder(ModBlocks.MYSTWOOD_PLANKS)
-                .slab(ModBlocks.MYSTWOOD_SLAB);
-                //.stairs(ModBlocks.MYSTWOOD_STAIRS);
+                .slab(ModBlocks.MYSTWOOD_SLAB)
+                .stairs(ModBlocks.MYSTWOOD_STAIRS);
 
 
 
