@@ -8,13 +8,17 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
+import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
+import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 
 import java.util.List;
 
 public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> MYSTWOOD_PLACED_KEY = registerKey("mystwood_placed");
+    public static final RegistryKey<PlacedFeature> LAVENDER_PLACED_KEY = registerKey("lavender_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -22,6 +26,9 @@ public class ModPlacedFeatures {
         register(context, MYSTWOOD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MYSTWOOD_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(2, 0.1f, 2), ModBlocks.MYSTWOOD_SAPLING));
+
+        register(context, LAVENDER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LAVENDER_KEY),
+                RarityFilterPlacementModifier.of(15), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
 
 

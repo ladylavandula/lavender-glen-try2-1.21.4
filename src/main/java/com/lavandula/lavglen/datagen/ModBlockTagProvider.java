@@ -21,6 +21,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.SMALL_FLOWERS)
                 .add(ModBlocks.LAVENDER_FLOWER_BLOCK);
 
+        getOrCreateTagBuilder(BlockTags.FLOWERS)
+                .add(ModBlocks.LAVENDER_FLOWER_BLOCK);
+
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.MYSTWOOD_LOG)
                 .add(ModBlocks.MYSTWOOD_WOOD)

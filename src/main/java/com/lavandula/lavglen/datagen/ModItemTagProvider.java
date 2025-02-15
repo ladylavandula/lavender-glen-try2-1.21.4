@@ -21,6 +21,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.SMALL_FLOWERS)
                 .add(ModBlocks.LAVENDER_FLOWER_BLOCK.asItem());
 
+        getOrCreateTagBuilder(ItemTags.BEE_FOOD)
+                .add(ModBlocks.LAVENDER_FLOWER_BLOCK.asItem());
+
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.MYSTWOOD_LOG.asItem())
                 .add(ModBlocks.MYSTWOOD_WOOD.asItem())
