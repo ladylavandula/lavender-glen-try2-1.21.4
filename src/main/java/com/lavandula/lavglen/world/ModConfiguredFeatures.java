@@ -26,10 +26,10 @@ public class ModConfiguredFeatures {
 
         register(context, MYSTWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.MYSTWOOD_LOG),
-                new StraightTrunkPlacer(5, 6, 3),
+                new StraightTrunkPlacer(4, 2, 0),
 
                 BlockStateProvider.of(ModBlocks.MYSTWOOD_LEAVES),
-                new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), 3),
+                new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0), 2),
 
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
