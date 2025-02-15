@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "lavglen:block/lavender_flower_block"
+    "layer0": "lavglen:item/lavender_flower_block"
   }
 }

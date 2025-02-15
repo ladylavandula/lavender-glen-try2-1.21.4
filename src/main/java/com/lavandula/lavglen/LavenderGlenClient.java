@@ -10,6 +10,7 @@ public class LavenderGlenClient implements ClientModInitializer {
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LAVENDER_FLOWER_BLOCK, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MYSTWOOD_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_LAVENDER_FLOWER_BLOCK, RenderLayer.getCutout());
 
 
     }

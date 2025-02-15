@@ -32,9 +32,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.MYSTWOOD_LOG).log(ModBlocks.MYSTWOOD_LOG).wood(ModBlocks.MYSTWOOD_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MYSTWOOD_LOG).log(ModBlocks.STRIPPED_MYSTWOOD_LOG).wood(ModBlocks.STRIPPED_MYSTWOOD_WOOD);
 
-        blockStateModelGenerator.registerTintableCross(ModBlocks.LAVENDER_FLOWER_BLOCK, BlockStateModelGenerator.CrossType.NOT_TINTED );
+       // blockStateModelGenerator.registerTintableCross(ModBlocks.LAVENDER_FLOWER_BLOCK, BlockStateModelGenerator.CrossType.NOT_TINTED );
         blockStateModelGenerator.registerSingleton(ModBlocks.MYSTWOOD_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MYSTWOOD_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
+
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LAVENDER_FLOWER_BLOCK, ModBlocks.POTTED_LAVENDER_FLOWER_BLOCK, BlockStateModelGenerator.CrossType.NOT_TINTED);
 
 
     }
@@ -42,6 +44,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModBlocks.MYSTWOOD_SAPLING.asItem(), Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.LAVENDER_FLOWER_BLOCK.asItem(), Models.GENERATED);
 
     }
 }

@@ -29,5 +29,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.MYSTWOOD_STAIRS);
 
+        addPottedPlantDrops(ModBlocks.POTTED_LAVENDER_FLOWER_BLOCK);
+
     }
 }

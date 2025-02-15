@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.block.v1.FabricBlock;
 import net.fabricmc.fabric.api.block.v1.FabricBlockState;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -69,13 +70,21 @@ public class ModBlocks {
 
 //flower registration
     public static final Block LAVENDER_FLOWER_BLOCK = registerBlock("lavender_flower_block",
-            new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK,
-                    Identifier.of(LavenderGlen.MOD_ID, "lavender_flower_block"))).sounds(BlockSoundGroup.GRASS)
-                    .breakInstantly().noCollision().nonOpaque()));
+            new FlowerBlock(StatusEffects.GLOWING, 10, AbstractBlock.Settings.copy(Blocks.ALLIUM).registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(LavenderGlen.MOD_ID, "lavender_flower_block")))));
+
+    public static final Block POTTED_LAVENDER_FLOWER_BLOCK = registerBlockWithoutItem("potted_lavender",
+            new FlowerPotBlock(LAVENDER_FLOWER_BLOCK, AbstractBlock.Settings.copy(Blocks.POTTED_ALLIUM).registryKey(RegistryKey.of(RegistryKeys.BLOCK,
+                    Identifier.of(LavenderGlen.MOD_ID, "potted_lavender")))));
+
+
 
 //Helper methods
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(LavenderGlen.MOD_ID, name), block);
+    }
+    private static Block registerBlockWithoutItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(LavenderGlen.MOD_ID, name), block);
     }
 
