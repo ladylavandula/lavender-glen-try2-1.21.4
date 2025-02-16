@@ -49,7 +49,7 @@ public class ModModelProvider extends FabricModelProvider {
                 .button(ModBlocks.MYSTWOOD_BUTTON);
 
         blockStateModelGenerator.registerDoor(ModBlocks.MYSTWOOD_DOOR);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.MYSTWOOD_TRAPDOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(ModBlocks.MYSTWOOD_TRAPDOOR);
 
 
 
