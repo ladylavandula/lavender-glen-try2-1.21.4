@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "lavglen:lavender_flower_block"
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraft:purple_dye"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "lavglen:stripped_mystwood_wood"
+  ],
+  "result": {
+    "count": 4,
+    "id": "lavglen:mystwood_planks"
+  }
+}

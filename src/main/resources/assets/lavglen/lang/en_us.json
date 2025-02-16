@@ -8,5 +8,11 @@
   "block.lavglen.mystwood_leaves": "Mystwood Leaves",
   "block.lavglen.mystwood_sapling": "Mystwood Sapling",
   "block.lavglen.mystwood_slab": "Mystwood Slab",
-  "block.lavglen.mystwood_stairs": "Mystwood Stairs"
+  "block.lavglen.mystwood_stairs": "Mystwood Stairs",
+  "block.lavglen.mystwood_fence": "Mystwood Fence",
+  "block.lavglen.mystwood_fence_gate": "Mystwood Fence Gate",
+  "block.lavglen.mystwood_door": "Mystwood Door",
+  "block.lavglen.mystwood_trapdoor": "Mystwood Trapdoor",
+  "block.lavglen.mystwood_pressure_plate": "Mystwood Pressure Plate",
+  "block.lavglen.mystwood_button": "Mystwood Button",
 }

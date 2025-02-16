@@ -17,26 +17,47 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
+        //Flowers
+
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LAVENDER_FLOWER_BLOCK, ModBlocks.POTTED_LAVENDER_FLOWER_BLOCK, BlockStateModelGenerator.CrossType.NOT_TINTED);
+
+        //Tree Stuff
+
+        blockStateModelGenerator.registerLog(ModBlocks.MYSTWOOD_LOG).log(ModBlocks.MYSTWOOD_LOG).wood(ModBlocks.MYSTWOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MYSTWOOD_LOG).log(ModBlocks.STRIPPED_MYSTWOOD_LOG).wood(ModBlocks.STRIPPED_MYSTWOOD_WOOD);
+        blockStateModelGenerator.registerSingleton(ModBlocks.MYSTWOOD_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MYSTWOOD_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
+
+        //WoodSet
+
+
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MYSTWOOD_PLANKS)
                 .slab(ModBlocks.MYSTWOOD_SLAB)
-                .stairs(ModBlocks.MYSTWOOD_STAIRS);
+                .stairs(ModBlocks.MYSTWOOD_STAIRS)
+                .fence(ModBlocks.MYSTWOOD_FENCE)
+                .fenceGate(ModBlocks.MYSTWOOD_FENCE_GATE)
+                .pressurePlate(ModBlocks.MYSTWOOD_PRESSURE_PLATE)
+                .button(ModBlocks.MYSTWOOD_BUTTON);
 
 
         new BlockFamily.Builder(ModBlocks.MYSTWOOD_PLANKS)
                 .slab(ModBlocks.MYSTWOOD_SLAB)
-                .stairs(ModBlocks.MYSTWOOD_STAIRS);
+                .stairs(ModBlocks.MYSTWOOD_STAIRS)
+                .fence(ModBlocks.MYSTWOOD_FENCE)
+                .fenceGate(ModBlocks.MYSTWOOD_FENCE_GATE)
+                .pressurePlate(ModBlocks.MYSTWOOD_PRESSURE_PLATE)
+                .button(ModBlocks.MYSTWOOD_BUTTON);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.MYSTWOOD_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.MYSTWOOD_TRAPDOOR);
 
 
 
 
-        blockStateModelGenerator.registerLog(ModBlocks.MYSTWOOD_LOG).log(ModBlocks.MYSTWOOD_LOG).wood(ModBlocks.MYSTWOOD_WOOD);
-        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MYSTWOOD_LOG).log(ModBlocks.STRIPPED_MYSTWOOD_LOG).wood(ModBlocks.STRIPPED_MYSTWOOD_WOOD);
 
        // blockStateModelGenerator.registerTintableCross(ModBlocks.LAVENDER_FLOWER_BLOCK, BlockStateModelGenerator.CrossType.NOT_TINTED );
-        blockStateModelGenerator.registerSingleton(ModBlocks.MYSTWOOD_LEAVES, TexturedModel.LEAVES);
-        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MYSTWOOD_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
 
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LAVENDER_FLOWER_BLOCK, ModBlocks.POTTED_LAVENDER_FLOWER_BLOCK, BlockStateModelGenerator.CrossType.NOT_TINTED);
+
 
 
     }

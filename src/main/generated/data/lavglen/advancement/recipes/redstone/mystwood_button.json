@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mystwood_log": {
+    "has_planks": {
       "conditions": {
         "items": [
           {
-            "items": "lavglen:mystwood_log"
+            "items": "lavglen:mystwood_planks"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:mystwood_planks_from_mystwood_log"
+        "recipe": "lavglen:mystwood_button"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_mystwood_log"
+      "has_planks"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:mystwood_planks_from_mystwood_log"
+      "lavglen:mystwood_button"
     ]
   }
 }

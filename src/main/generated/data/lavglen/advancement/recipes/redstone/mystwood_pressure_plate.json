@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lavglen:mystwood_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lavglen:mystwood_pressure_plate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lavglen:mystwood_pressure_plate"
+    ]
+  }
+}

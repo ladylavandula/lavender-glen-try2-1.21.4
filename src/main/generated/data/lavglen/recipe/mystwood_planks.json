@@ -1,7 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "group": "planks",
+  "category": "building",
   "ingredients": [
     "lavglen:mystwood_log"
   ],

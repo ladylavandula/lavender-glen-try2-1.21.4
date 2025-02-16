@@ -1,9 +1,15 @@
 // 1.21.4	-999999999-01-01T00:00:00	Lavender Glen/Tags for minecraft:block
+f446bd621f0e934a0e98bde8b25a67fb10ed14dd data/minecraft/tags/block/fence_gates.json
 40430509f6d4b770920594087df6b6075eb492aa data/minecraft/tags/block/flowers.json
 0a18116e0b876a09fb84db0b48503250eee0b699 data/minecraft/tags/block/leaves.json
 25d2384c1e5f5134ce2ad6c4e3e1e503d6c12b8d data/minecraft/tags/block/logs_that_burn.json
 b37e79d9494766055f8616e1d07474804e3eba84 data/minecraft/tags/block/planks.json
 6d875b0d52296f3827ebb437d5c922dcbfcd8e61 data/minecraft/tags/block/saplings.json
 40430509f6d4b770920594087df6b6075eb492aa data/minecraft/tags/block/small_flowers.json
+d259a6eb7692383fa13189660edfb7b7ce76b3c2 data/minecraft/tags/block/wooden_buttons.json
+a0c32905960259b1abf27ce0be60ce907c180a39 data/minecraft/tags/block/wooden_doors.json
+e39be4e7b345d5125c82c4d397759d9b12db768d data/minecraft/tags/block/wooden_fences.json
+5f0d23122f69ae53d8e3d65301788f8079a4a590 data/minecraft/tags/block/wooden_pressure_plates.json
 4712dd95d53f9b8f541f0f5806df209e71b518b8 data/minecraft/tags/block/wooden_slabs.json
 8654f9dc58c38916bce71516c5c0b760d54d6a9f data/minecraft/tags/block/wooden_stairs.json
+d97deddbd4597d577a41e06ab23bae16a47f6497 data/minecraft/tags/block/wooden_trapdoors.json

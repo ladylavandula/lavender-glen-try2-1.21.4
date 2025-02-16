@@ -40,7 +40,6 @@ public class ModBlocks {
     // Wood set - tree stuff
 
 
-
     public static final Block MYSTWOOD_PLANKS = registerBlock("mystwood_planks",
            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_planks")))));
@@ -55,14 +54,40 @@ public class ModBlocks {
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_slab")))));
 
+    public static final Block MYSTWOOD_FENCE = registerBlock("mystwood_fence",
+            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_fence")))));
+
+    public static final Block MYSTWOOD_FENCE_GATE = registerBlock("mystwood_fence_gate",
+            new FenceGateBlock(WoodType.OAK,AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_fence_gate")))));
+
+    public static final Block MYSTWOOD_DOOR = registerBlock("mystwood_door",
+            new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_door")))));
+
+    public static final Block MYSTWOOD_TRAPDOOR = registerBlock("mystwood_trapdoor",
+            new TrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_trapdoor")))));
+
+    public static final Block MYSTWOOD_PRESSURE_PLATE = registerBlock("mystwood_pressure_plate",
+            new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_pressure_plate")))));
+
+public static final Block MYSTWOOD_BUTTON = registerBlock("mystwood_button",
+            new ButtonBlock(BlockSetType.OAK, 30, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_button")))));
 
 
 
+
+
+// Leaves and Sapling
     public static final Block MYSTWOOD_LEAVES = registerBlock("mystwood_leaves",
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_leaves")))));
 
-////ERROR TO BE COMPLETED LATER Sapling registration
+
     public static final Block MYSTWOOD_SAPLING = registerBlock("mystwood_sapling",
             new SaplingBlock(ModSaplingGenerators.MYSTWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderGlen.MOD_ID, "mystwood_sapling")))));
